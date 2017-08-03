@@ -1,0 +1,49 @@
+<nav class="navbar navbar-inverse col-sm-12">
+	<div class="container-fluid">
+		<div class="navbar-header" id="mylink">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>						
+			</button>
+			<a href="#" class="navbar-brand mobile">Menu</a>
+			<!-- <a href="#" class="navbar-brand computer">Home</a> -->
+		</div>
+
+		<div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="nav navbar-nav" id="mylink">
+				<li><a href="./">Home</a></li>
+				<li><a href="./gallery.php">Gallery</a></li>
+				<li><a href="./our-experts.php">Our Experts</a></li>
+				<li><a href="./enrolnment.php">Enrolnment</a></li>
+				<li><a href="./contact-us.php">Contact Us</a></li>
+				<li><a href="./courses.php">Courses</a></li>
+				<li><a href="./facility.php">Facilities</a></li>
+			</ul>
+
+			<ul class="nav navbar-nav navbar-right" id="mylink">
+			<?php
+
+				if(isset($_COOKIE['loginemail']))
+				{
+					echo "<li><a href='./student-zone.php'>";
+					echo "<span class='glyphicon glyphicon-user'></span> ";
+					echo $_COOKIE['name'];
+					echo "</a></li>";
+
+					echo "<li><a href='./secure/logout.php'>";
+					echo "<span class='glyphicon glyphicon-log-out'></span> ";
+					echo "Logout";
+					echo "</a></li>";
+
+				}
+				else
+				{
+					echo"<li><a href='./student-zone.php'><span class='glyphicon glyphicon-user'></span> Sign Up</a></li>".
+						"<li><a href='./student-zone.php'><span class='glyphicon glyphicon-log-in'></span> Login</a></li>";
+				}
+			?>						
+			</ul>
+		</div>
+	</div>
+</nav>

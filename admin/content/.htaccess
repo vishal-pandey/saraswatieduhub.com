@@ -1,0 +1,21 @@
+<Files ~ "^.*">
+  Deny from all
+</Files>
+<Files ./noticeprocess.php>
+	Allow from all
+</Files>
+<Files ./resultprocess.php>
+	Allow from all
+</Files>
+<Files ./teacherprocess.php>
+	Allow from all
+</Files>
+<Files ./teacherupload.php>
+	Allow from all
+</Files>
+<Files ./videoprocess.php>
+	Allow from all
+</Files>
+<Files ./feeprocess.php>
+	Allow from all
+</Files>
