@@ -1,0 +1,15 @@
+<Files ~ "^.*">
+  Deny from all
+</Files>
+<Files ./login.php>
+	Allow from all
+</Files>
+<Files ./signup.php>
+	Allow from all
+</Files>
+<Files ./logout.php>
+	Allow from all
+</Files>
+<Files ./enrolnment-process.php>
+	Allow from all
+</Files>
