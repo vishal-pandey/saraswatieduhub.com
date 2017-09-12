@@ -1,6 +1,0 @@
-<?php
-	$server = "localhost";
-	$user = "root";
-	$pwd = "12345";
-	$db = "saraswati";
-?>

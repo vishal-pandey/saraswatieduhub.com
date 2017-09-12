@@ -1,6 +1,0 @@
-<Files ~ "^.*">
-AuthName "Prompt"
-AuthType Basic
-AuthUserFile /var/www/saraswatieduhub.com/public_html/admin/.htpasswd
-Require valid-user
-</Files>
